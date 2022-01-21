@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <title>basic-html</title>
+  <meta charset="utf-8">
+  <style>
+  /*참고할 style을 link라는 태그를 이용하여 style.css파일에 저장되어있는 내용을 가져와서 최종적인 코드로 사용한다.*/
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1><a href="web.html" target="_blank">WEB</a></h1>
+<div id="grid">
+  <ol>
+    <li><a href="html.html"target="_blank" style="color:gray;">HTML</a></li>
+    <li><a href="css.html"target="_blank">CSS</a></li>
+    <li><a href="javascript.html"target="_blank">JavaScript</a></li>
+  </ol>
+  <div id="article">
+<h2>HTML이란 무엇인가...</h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u0OeZfIfBRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+<a href="https://www.w3.org/TR/2011/WD-html5-20110405/"target="_blank" titile="html5 specification" style="color:blue"> Hypertext Markup Language(HTML)</a> is the standard markup language for <strong>  creating <u>web</u> pages</strong> and web applications
+web browsers receivve HTML documents from a web server or from local storage and render them into multimedia web pages.
+<br>HTML describes the structure of a web page semantically and originally
+<br>HTML elements are the building blocks of HTML pages.
+<p>With HTML constructs, images and other objects, such as interactive   forms, may be embedded into the rendered page.
+It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items.
+HTML elements are delineated by tags, written using angle brackets.</p>
+<br>
+<img src="html.jpg" width="50%">
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://web-efqqwib3dw.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</div>
+</body>
+</html>

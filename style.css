@@ -1,0 +1,40 @@
+a {
+  color:black;
+  text-decoration:none;
+}
+h1{
+  font-size:50px;
+  text-align: center;
+  border-bottom:1px solid gray;
+  margin:0;
+  padding:20px;
+}
+ol{
+  border-right:1px solid gray;
+  width:130px;
+  margin:0;
+  padding:20px;
+}
+#grid ol{
+    padding-left: 33px;
+}
+#grid{
+  display : grid;
+  grid-template-columns: 200px 1fr;
+}
+body{
+  margin:0;
+}
+
+/*800px보다 작을 경우 어떻게 변화를 줄것인가 : grid 태그의 부분을 grid에서 벗어나게 해주기, 선을 없애주기 : ol의 border-right 때문에 존재하기 때문에 없애준다, web의 태두리 없애주기 : border-bottm 없애기*/
+@media(max-width : 800px){
+  #grid{
+    display: block; /*block element가 되어 화면 전체를 사용하게 되어 자연스럽게 나려가게 되는것이다.*/
+  }
+  ol{
+    border-right:none;
+  }
+  h1{
+    border-bottom:none;
+  }
+}
