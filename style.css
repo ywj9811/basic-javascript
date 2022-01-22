@@ -25,6 +25,12 @@ ol{
 body{
   margin:0;
 }
+#night_day{
+  border-right:1px solid gray;
+  width:184px;
+  margin:0;
+  padding:20px;
+}
 
 /*800px보다 작을 경우 어떻게 변화를 줄것인가 : grid 태그의 부분을 grid에서 벗어나게 해주기, 선을 없애주기 : ol의 border-right 때문에 존재하기 때문에 없애준다, web의 태두리 없애주기 : border-bottm 없애기*/
 @media(max-width : 800px){
